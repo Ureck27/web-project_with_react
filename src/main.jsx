@@ -7,7 +7,7 @@ import Navbar from './Componment/Navbar/Navbar.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Footer />
     <Navbar />
+    <Footer />
   </StrictMode>,
 )
