@@ -5,11 +5,13 @@ import App from './App.jsx'
 import Footer from './Componment/Footer/Footer.jsx'
 import Navbar from './Componment/Navbar/Navbar.jsx'
 import Shared from './Componment/Shared/Shared.jsx'
+import Slider from './Componment/Slider/Slider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
     <Footer />
     <Shared />
+    <Slider />
   </StrictMode>,
 )
