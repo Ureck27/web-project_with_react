@@ -9,7 +9,8 @@ function Shared(){
                 <input type="text" />
                 <p>Entre Your message</p>
                 <input type="text" />
-                <button></button>
+                <br />
+                <button>submet</button>
             </form>
         </div>
     )

@@ -10,8 +10,9 @@ import Slider from './Componment/Slider/Slider.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
-    <Footer />
     <Shared />
     <Slider />
+    <Footer />
+
   </StrictMode>,
 )
