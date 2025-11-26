@@ -1,10 +1,6 @@
 function Slider(){
     return (
-       <div>
-           <div>
-            <h2>hello this is Slider</h2>
-           </div>
-       </div>
+       <h1>hello world</h1>
     )
 }
 
