@@ -1,7 +1,9 @@
-function Moviecard({ movie, onFavoriteClick }) {
+import React from "react";
+
+function MovieCard({ movie, onFavoriteClick }) {
 
   // Make sure movie exists
-
+  if (!movie) return null;
 
   const { title, release_date, url } = movie;
 
@@ -12,7 +14,10 @@ function Moviecard({ movie, onFavoriteClick }) {
 
         <div className="movie-overlay">
           <button
-            className="favorite-btn" style={{ fontSize: "40px" }} onClick={() => onFavoriteClick(movie)} >
+            className="favorite-btn"
+            style={{ fontSize: "40px" }}
+            onClick={() => onFavoriteClick(movie)}
+          >
             ❤️
           </button>
         </div>
@@ -26,4 +31,5 @@ function Moviecard({ movie, onFavoriteClick }) {
   );
 }
 
-export default Moviecard;
+export default MovieCard;
+
