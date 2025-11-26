@@ -1,7 +1,9 @@
 import React from "react";
 
-function MovieCard({ movie, onFavoriteClick }) {
-
+function MovieCard({ movie }) {
+   function onFavoriteClick(){
+    
+   }
   // Make sure movie exists
   if (!movie) return null;
 
