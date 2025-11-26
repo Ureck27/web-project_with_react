@@ -2,7 +2,7 @@ import React from "react";
 
 function MovieCard({ movie }) {
    function onFavoriteClick(){
-    
+     alert("clicked")
    }
   // Make sure movie exists
   if (!movie) return null;
