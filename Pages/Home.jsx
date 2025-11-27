@@ -24,7 +24,8 @@ function Home(){
      return (
         <div className="home">
             <div className="movies-grid">
-                {movies.map( movie => <MovieCard />)}
+                {movies.map( (movie) => (
+                    <MovieCard movie={movie} key={movie.id}/> ) )}
             </div>
         </div>
      )
