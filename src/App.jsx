@@ -5,16 +5,12 @@ import './App.css'
 import Navbar from './Componment/Navbar/Navbar'
 import Slider from './Componment/Slider/Slider'
 import Shared from './Componment/Shared/Shared'
-import Moviecard from './Componment/moviecard/Moviecard.jsx'
+import Home from '../Pages/Home'
 function App() {
 
   return (
          <>
-          <Navbar />
-          <Slider />
-          <Shared />
-      
-
+          <Home />
          </>
   )
 }
