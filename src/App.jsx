@@ -13,8 +13,23 @@ function App() {
           <Navbar />
           <Slider />
           <Shared />
-          <Moviecard { title: "asfasfas" }/>
-          
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+          <Moviecard movie={{title:"hkasfa" , review :"4 " , release_date:"2020"}}/>
+
          </>
   )
 }

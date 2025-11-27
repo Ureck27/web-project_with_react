@@ -1,13 +1,11 @@
-import React from "react";
-
-function MovieCard({ movie }) {
+   function MovieCard({ movie }) {
    function onFavoriteClick(){
      alert("clicked")
    }
   // Make sure movie exists
   if (!movie) return null;
 
-  const { title, release_date, url } = movie;
+  const { title, review ,release_date, url } = movie;
 
   return (
     <div className="movie-card">
@@ -27,6 +25,7 @@ function MovieCard({ movie }) {
 
       <div>
         <h3>{movie.title}</h3>
+        <p>{movie.review}</p>
         <p>{movie.release_date}</p>
       </div>
     </div>
