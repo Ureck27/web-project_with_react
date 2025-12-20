@@ -1,5 +1,8 @@
 import MovieCard from "../componments/MovieCard";
+import { useState } from "react";
+
 function Home(){
+    const [searchQuery , setQuery]=useState("");
    const movies = [
   { id: 1, title: "Inception", releaseDate: "2010-07-16", stars: 5,
     imageUrl: "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg" },
@@ -99,6 +102,7 @@ function Home(){
             type="text" 
             placeholder="search fpr movies..." 
             className="search-input"
+            value={searchQuery}
              />
             <button type="submit" className="search-button">Search</button>
           </form>
