@@ -3,7 +3,7 @@ function App() {
 
   return (
          <>
-         <MovieCard />
+         <MovieCard movie={{title:"Tim's Film",releasedate:"2024"}}/>
          </>
   )
 }
