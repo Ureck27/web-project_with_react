@@ -92,7 +92,9 @@ function Home(){
     imageUrl: "https://image.tmdb.org/t/p/w500/oPxnRhyAIzJKGUEdSiwTJQBa6iE.jpg" }
 ];
     const handleSearch=()=>{
-       alert(searchQuery)
+       e.preventDefault()
+       alert(searchQuery);
+       //setSearchQuery("")
     }
     return(
         <div className="Home">
@@ -107,9 +109,10 @@ function Home(){
             <button type="submit" className="search-button">Search</button>
           </form>
           <div className="movies-grid">
-            {movies.map((movie,index) => (
-                 <MovieCard movie={movie} key={index} />
-                ))}
+            {movies.map((movie) => 
+            movie.title.toLowerCase().startsWith(searchQuery) &&(
+            <MovieCard movie={movie} key={movie.id} />
+            ))}
           </div>
         </div>
     );
