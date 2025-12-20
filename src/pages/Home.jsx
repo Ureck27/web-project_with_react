@@ -2,7 +2,7 @@ import MovieCard from "../componments/MovieCard";
 import { useState } from "react";
 
 function Home(){
-    const [searchQuery , setQuery]=useState("");
+    const [searchQuery , setSearchQuery]=useState("");
    const movies = [
   { id: 1, title: "Inception", releaseDate: "2010-07-16", stars: 5,
     imageUrl: "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg" },
@@ -91,9 +91,8 @@ function Home(){
   { id: 29, title: "Whiplash", releaseDate: "2014-10-10", stars: 5,
     imageUrl: "https://image.tmdb.org/t/p/w500/oPxnRhyAIzJKGUEdSiwTJQBa6iE.jpg" }
 ];
-
     const handleSearch=()=>{
-
+       alert(searchQuery)
     }
     return(
         <div className="Home">
@@ -103,6 +102,7 @@ function Home(){
             placeholder="search fpr movies..." 
             className="search-input"
             value={searchQuery}
+            onChange={(e)=>setSearchQuery(e.target.value)}
              />
             <button type="submit" className="search-button">Search</button>
           </form>
