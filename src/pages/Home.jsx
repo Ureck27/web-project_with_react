@@ -89,8 +89,19 @@ function Home(){
     imageUrl: "https://image.tmdb.org/t/p/w500/oPxnRhyAIzJKGUEdSiwTJQBa6iE.jpg" }
 ];
 
+    const handleSearch=()=>{
+
+    }
     return(
         <div className="Home">
+          <form onSubmit={handleSearch} className="Search-form">
+            <input 
+            type="text" 
+            placeholder="search fpr movies..." 
+            className="search-input"
+             />
+            <button type="submit" className="search-button">Search</button>
+          </form>
           <div className="movies-grid">
             {movies.map((movie,index) => (
                  <MovieCard movie={movie} key={index} />
