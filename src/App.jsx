@@ -1,21 +1,12 @@
-import { useState } from 'react'
-
+import MovieCard from "./componments/MovieCard"
 function App() {
 
   return (
          <>
-          <Text display="hello world!"/>
-          <Text display="Hello world!"/>
+         <MovieCard />
          </>
   )
 }
 
-function Text({display}){
-  return(
-    <div>
-      <h1>{display}</h1>
-    </div>
-  )
-}
 
-export default App
+export default App;
