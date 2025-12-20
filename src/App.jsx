@@ -1,9 +1,9 @@
-import MovieCard from "./componments/MovieCard"
+import Home from "./pages/Home";
 function App() {
 
   return (
          <>
-         <MovieCard movie={{title:"Tim's Film",releasedate:"2024"}}/>
+          <Home />
          </>
   )
 }
